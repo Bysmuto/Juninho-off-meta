@@ -1,0 +1,96 @@
+.menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right,
+    rgba(226, 42, 103, 0.856),
+    rgba(201, 13, 44, 0.822)
+  );
+}
+.item-menu {
+  font-size: x-large;
+  padding: 20px;
+}
+
+/* search bar */
+
+.search-bar {
+  display: flex;
+  justify-content: end;
+  margin: 20px;
+  
+  position: relative;
+}
+
+#search {
+  width: 50%;
+  outline: 0px;
+
+  height: 50px;
+
+  border: none;
+  border-radius: 20px;
+  padding: 0px 40px 0px 10px;
+
+  font-size: 18px;
+
+  transition: 0.8s ease-in-out;
+}
+
+#search:hover,
+#search:focus {
+  width: 100%;
+}
+
+.results {
+  position: absolute;
+  right: 0;
+
+  border-radius: 20px;
+
+  background-color: rgb(253, 238, 244);
+
+  padding: 0px;
+}
+
+li img {
+  width: 10%;
+  border-radius: 10px;
+  display: inline;
+}
+
+.results ul li {word-wrap: break-word;
+  font-size: 100%;
+  list-style: none;
+
+  border-radius: 20px;
+  opacity: 0;
+  display: none;
+
+  padding: 8px 12px;
+
+  transition: 0.4s ease-in-out;
+}
+
+.show .results ul li {
+  opacity: 1;
+  display: block;
+}
+
+.show .results {
+  padding: 10px;
+}
+
+.search-champion {
+  text-decoration: none;
+  color: rgba(43, 39, 39, 0.877);
+}
+
+.results ul li:hover {
+  background: #ffffffa8;
+  color: rgb(44, 40, 42);
+  font-size: 150%;
+  box-shadow: 2px 2px 10px 2px rgba(51, 51, 51, 0.315);
+  border: 1px solid rgba(255, 255, 255, 0.212);
+}
