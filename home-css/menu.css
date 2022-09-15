@@ -19,7 +19,7 @@
   display: flex;
   justify-content: end;
   margin: 20px;
-  
+
   position: relative;
 }
 
@@ -44,6 +44,7 @@
 }
 
 .results {
+  z-index: 1;
   position: absolute;
   right: 0;
 
@@ -60,7 +61,8 @@ li img {
   display: inline;
 }
 
-.results ul li {word-wrap: break-word;
+.results ul li {
+  word-wrap: break-word;
   font-size: 100%;
   list-style: none;
 
@@ -83,9 +85,25 @@ li img {
 }
 
 .search-champion {
+  position: relative;
   text-decoration: none;
   color: rgba(43, 39, 39, 0.877);
 }
+
+.search-champion::before {
+  content: "👉";
+
+  padding-right: 20%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+ font-size: 200%;
+
+ display: none;
+}
+.search-champion:hover::before{display: block;}
+
 
 .results ul li:hover {
   background: #ffffffa8;

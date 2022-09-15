@@ -4,21 +4,56 @@
 
   font-family: sans-serif;
   font-weight: 900;
-  
-
 }
 
-.logo{color: whitesmoke;}
+.logo {
+  color: whitesmoke;
+}
 
-.titulo {
-
+.titulo {text-shadow: 2px 2px 0px  rgba(226, 42, 103, 0.281);;
+  position: relative;
   color: rgb(41, 34, 34);
 
   text-align: center;
   font-size: 400%;
-  
+  font-weight: 800;
+
   margin: 5%;
+
+
 }
+
+
+#off {
+  color: rgba(226, 42, 103, 0.856);
+
+  position: relative;
+  top: 0;
+  
+   animation: drop 1.5s ease;
+   animation-delay: 1s;
+  
+
+  
+   
+}
+#off:hover {animation-play-state:paused;}
+
+@keyframes drop {
+  0% {
+  
+   font-size: 0%;
+  }
+
+  80%{font-size: 200%;}
+
+  100% {
+    
+    font-size: 100%;
+  }
+}
+
+
 
 
 
@@ -27,9 +62,11 @@ h2 {
 
   padding-bottom: 2%;
   margin: auto;
-  
+
   text-align: center;
   font-size: 200%;
 }
 
-a{text-decoration: none;}
+a {
+  text-decoration: none;
+}

@@ -1,4 +1,6 @@
 .champions {
+
+
   border-radius: 20px;
  
   background: linear-gradient(
@@ -18,7 +20,6 @@
 }
 
 
-
 .champion img {
   border: 1px solid rgba(255, 255, 255, 0.479);
   opacity: 0.75;
@@ -27,6 +28,7 @@
 }
 
 .champion {
+  position: relative;
   word-break: break-all;
 
   text-align: center;
@@ -36,6 +38,28 @@
 
   border-radius: 5%;
 }
+
+.champion::before{
+  position: absolute;
+  content: '👇';
+  width: 100%;
+  font-size: 250%;
+  
+
+  top: -5%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+
+  opacity: 0.9;
+  display: none;
+
+}
+
+.champion:hover::before{
+  display: inline;
+}
+
+
 
 .champion > * {color: whitesmoke;}
 .name{display: block;}
