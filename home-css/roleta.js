@@ -173,7 +173,7 @@ full_champion.forEach(champ => {buildss.push  (`<a href="/champions/${champ}.htm
   <div class="buildDescri">descrição</div>
   <div class="buildItens">imagem da build</div>
 </div></a>`)
-console.log(buildss)
+
 });
 
 
