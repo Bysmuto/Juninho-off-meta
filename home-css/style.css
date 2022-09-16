@@ -23,6 +23,10 @@
 
 }
 
+.machine-title{font-size: xx-large; color: rgb(41, 34, 34);}
+
+.machine-title span{color: rgba(226, 42, 103, 0.856);}
+
 
 #off {
   color: rgba(226, 42, 103, 0.856);

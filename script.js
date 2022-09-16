@@ -10,9 +10,9 @@ all_champion = [
   'TwistedFate',
   'XinZhao',
   'Urgot',
-  'LeBlanc',
+  'Leblanc',
   'Vladimir',
-  'Fiddlesticks',
+  'FiddleSticks',
    'Kayle',
    'MasterYi',
    'Alistar',
@@ -85,7 +85,7 @@ all_champion = [
    'Malzahar',
    'Talon',
    'Riven',
-   "Kogmaw",
+   "KogMaw",
    'Shen',
    'Lux',
     'Xerath',
@@ -128,7 +128,7 @@ all_champion = [
     'Jhin',
     'Kindred',
     'Jinx',
-    'Tahmkench',
+    'TahmKench',
     'Viego',
     'Senna',
     'Lucian',
@@ -144,7 +144,7 @@ all_champion = [
     'Samira',
     'Thresh',
     'Illaoi',
-    "Reksai",
+    "RekSai",
     'Ivern',
     'Kalista',
     'Bard',
@@ -164,11 +164,25 @@ all_champion = [
 ]
 champions = all_champion.sort()
 
+
+
+
 // ----------------------------------- Champion selector -----------------------------------
+
+
+let som = document.getElementById('som')
+
+ 
+function playSound(){  
+  som.play() 
+}
+function playSoundSpin(){  
+  spinSom.play() 
+}
 
 let div = document.querySelector('.champions')
  all_champion.forEach(champion => {div.innerHTML +=
-    `<div class="champion">
+    `<div class="champion" onmouseover="playSound()">
 
     <a class="link-champion" href="/champions/${champion}.html">
 
@@ -178,7 +192,6 @@ let div = document.querySelector('.champions')
 
     </span></div>`
 }); 
-
 
 
 // ----------------------------------- search bar -----------------------------------
@@ -218,3 +231,4 @@ let searchable = champions
      resultsWrapper.innerHTML = `<ul>${content}</ul>`;
    }
    
+ 
